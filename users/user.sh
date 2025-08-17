@@ -1,0 +1,6 @@
+IFS=',' read -r name room work home other <<< "$(getent passwd hwpplayer1 | cut -d ':' -f 5)"
+echo "Full Name: $name"
+echo "Room Number: $room"
+echo "Work Phone: $work"
+echo "Home Phone: $home"
+echo "Other: $other"
